@@ -17,14 +17,14 @@ digraph PowerSpeed {
   // Transitions
   0 -> 1 [ label="PowerOn()", tooltip="PowerOn()" ]
   0 -> 2 [ label="IncrementSpeed()", tooltip="IncrementSpeed()" ]
-  1 -> 3 [ label="IncrementSpeed()", tooltip="IncrementSpeed()" ]
   1 -> 0 [ label="PowerOff()", tooltip="PowerOff()" ]
+  1 -> 3 [ label="IncrementSpeed()", tooltip="IncrementSpeed()" ]
   2 -> 3 [ label="PowerOn()", tooltip="PowerOn()" ]
   2 -> 4 [ label="IncrementSpeed()", tooltip="IncrementSpeed()" ]
-  3 -> 5 [ label="IncrementSpeed()", tooltip="IncrementSpeed()" ]
   3 -> 2 [ label="PowerOff()", tooltip="PowerOff()" ]
+  3 -> 5 [ label="IncrementSpeed()", tooltip="IncrementSpeed()" ]
   4 -> 5 [ label="PowerOn()", tooltip="PowerOn()" ]
   4 -> 0 [ label="IncrementSpeed()", tooltip="IncrementSpeed()" ]
-  5 -> 1 [ label="IncrementSpeed()", tooltip="IncrementSpeed()" ]
   5 -> 4 [ label="PowerOff()", tooltip="PowerOff()" ]
+  5 -> 1 [ label="IncrementSpeed()", tooltip="IncrementSpeed()" ]
 }

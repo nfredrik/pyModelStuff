@@ -33,14 +33,14 @@ runstarts = [0]
 graph = (
   (0, (PowerOn, (), None), 1),
   (0, (IncrementSpeed, (), None), 2),
-  (1, (IncrementSpeed, (), None), 3),
   (1, (PowerOff, (), None), 0),
+  (1, (IncrementSpeed, (), None), 3),
   (2, (PowerOn, (), None), 3),
   (2, (IncrementSpeed, (), None), 4),
-  (3, (IncrementSpeed, (), None), 5),
   (3, (PowerOff, (), None), 2),
+  (3, (IncrementSpeed, (), None), 5),
   (4, (PowerOn, (), None), 5),
   (4, (IncrementSpeed, (), None), 0),
-  (5, (IncrementSpeed, (), None), 1),
   (5, (PowerOff, (), None), 4),
+  (5, (IncrementSpeed, (), None), 1),
 )
