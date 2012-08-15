@@ -1,0 +1,12 @@
+digraph SpeedControl {
+
+  // Nodes
+  0 [ style=filled, shape=ellipse, peripheries=2, fillcolor=lightgray ]
+  1 [ style=filled, shape=ellipse, peripheries=1, fillcolor=white ]
+  2 [ style=filled, shape=ellipse, peripheries=1, fillcolor=white ]
+
+  // Transitions
+  0 -> 1 [ label="IncrementSpeed()", tooltip="IncrementSpeed()" ]
+  1 -> 2 [ label="IncrementSpeed()", tooltip="IncrementSpeed()" ]
+  2 -> 0 [ label="IncrementSpeed()", tooltip="IncrementSpeed()" ]
+}

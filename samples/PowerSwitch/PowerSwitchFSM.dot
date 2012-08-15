@@ -1,0 +1,12 @@
+digraph PowerSwitchFSM {
+
+  // Nodes
+  0 [ style=filled, shape=ellipse, peripheries=2, fillcolor=lightgray,
+      tooltip="{'PowerSwitch': {'power': False}}" ]
+  1 [ style=filled, shape=ellipse, peripheries=1, fillcolor=white,
+      tooltip="{'PowerSwitch': {'power': True}}" ]
+
+  // Transitions
+  0 -> 1 [ label="PowerOn()", tooltip="PowerOn()" ]
+  1 -> 0 [ label="PowerOff()", tooltip="PowerOff()" ]
+}
